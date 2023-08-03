@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        app: "minmax(18rem, 20rem) 1fr",
+      },
       maxWidth: {
         app: "43.75rem",
       },
