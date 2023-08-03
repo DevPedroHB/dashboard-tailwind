@@ -17,7 +17,7 @@ export function TabItem({ title, isSelected = false, ...props }: ITabItem) {
       <span>{title}</span>
       {isSelected && (
         <motion.div
-          layoutId="activeTab"
+          layoutId="active-tab"
           className="absolute -bottom-px left-0 right-0 h-0.5 bg-violet-700"
         />
       )}
