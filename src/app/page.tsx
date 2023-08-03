@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="flex h-screen flex-col items-center bg-slate-50 p-8 text-center text-slate-900 dark:bg-slate-900 dark:text-slate-100">
-      <div className="max-w-2xl">
+      <div className="max-w-app">
         <h1 className="text-3xl font-bold sm:text-4xl lg:text-5xl">
           Rapidly build modern websites without ever leaving your HTML.
         </h1>
