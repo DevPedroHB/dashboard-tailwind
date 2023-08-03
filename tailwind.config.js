@@ -10,12 +10,10 @@ module.exports = {
       gridTemplateColumns: {
         app: "minmax(18rem, 20rem) 1fr",
         profile: "max-content 1fr max-content",
+        from: "minmax(7.5rem, 17.5rem) minmax(25rem, 1fr) minmax(0, 15rem)",
       },
       maxWidth: {
         app: "43.75rem",
-      },
-      colors: {
-        pedro: "#8257e6",
       },
     },
   },
