@@ -152,6 +152,7 @@ export default function Home() {
             <FileInput.Root>
               <FileInput.Trigger />
               <FileInput.Control multiple />
+              <FileInput.FileList />
             </FileInput.Root>
           </div>
           <div className="flex items-center justify-end gap-2 pt-5">
