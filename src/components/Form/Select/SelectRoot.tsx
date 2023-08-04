@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 import { ReactNode } from "react";
 
 interface ISelectRoot extends Select.SelectProps {
-  placeholder: string;
+  placeholder?: string;
   children: ReactNode;
 }
 
@@ -23,7 +23,7 @@ export function SelectRoot({ placeholder, children, ...props }: ISelectRoot) {
           side="bottom"
           position="popper"
           sideOffset={8}
-          className="z-10 w-[--radix-select-trigger-width] overflow-hidden rounded-lg border border-zinc-200 bg-white"
+          className="z-10 w-[--radix-select-trigger-width] overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm"
         >
           <Select.Viewport>{children}</Select.Viewport>
         </Select.Content>
