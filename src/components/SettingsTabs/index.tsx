@@ -10,7 +10,7 @@ interface ISettingsTabs {
 }
 
 export function SettingsTabs({ tabs }: ISettingsTabs) {
-  const [currentTab, setCurrentTab] = useState(tabs[0]);
+  const [currentTab, setCurrentTab] = useState(formatStringToId(tabs[0]));
 
   return (
     <Tabs.Root value={currentTab} onValueChange={setCurrentTab}>
@@ -19,7 +19,12 @@ export function SettingsTabs({ tabs }: ISettingsTabs) {
           const id = formatStringToId(tab);
 
           return (
-            <TabItem value={id} title={tab} isSelected={currentTab === id} />
+            <TabItem
+              key={id}
+              value={id}
+              title={tab}
+              isSelected={currentTab === id}
+            />
           );
         })}
       </Tabs.List>
