@@ -120,7 +120,10 @@ export default function Home() {
             >
               Country
             </label>
-            <Select />
+            <Select.Root placeholder="Select a country...">
+              <Select.Item value="br" text="Brazil" />
+              <Select.Item value="us" text="United States" />
+            </Select.Root>
           </div>
           <div className="grid grid-cols-from gap-3 pt-5">
             <label
@@ -129,7 +132,13 @@ export default function Home() {
             >
               Timezone
             </label>
-            <div></div>
+            <Select.Root placeholder="Select a timezone...">
+              <Select.Item
+                value="utc8"
+                text="Pacific Standard Time (UTC-08:00)"
+              />
+              <Select.Item value="utc3" text="America São Paulo (UTC-03:00)" />
+            </Select.Root>
           </div>
           <div className="grid grid-cols-from gap-3 pt-5">
             <label htmlFor="bio" className="text-sm font-medium text-zinc-700">
