@@ -3,25 +3,13 @@ import { Input } from "@/components/Form/Input";
 import { Select } from "@/components/Form/Select";
 import { Textarea } from "@/components/Form/Textarea";
 import { SettingsTabs } from "@/components/SettingsTabs";
+import { tabs } from "@/utils/constants/tabs";
 import { Bold, Italic, Link, List, ListOrdered, Mail } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Dashboard | Settings",
 };
-
-const tabs = [
-  "My details",
-  "Profile",
-  "Password",
-  "Team",
-  "Plan",
-  "Billing",
-  "Email",
-  "Notifications",
-  "Integrations",
-  "API",
-];
 
 export default function Home() {
   return (

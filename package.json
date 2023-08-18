@@ -6,19 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint src --ext .ts,.tsx --fix"
   },
   "dependencies": {
-    "@radix-ui/react-select": "^1.2.2",
-    "@radix-ui/react-tabs": "^1.0.4",
-    "@types/node": "20.4.6",
-    "@types/react": "18.2.18",
-    "@types/react-dom": "18.2.7",
+    "@formkit/auto-animate": "0.7.0",
+    "@radix-ui/react-select": "1.2.2",
+    "@radix-ui/react-tabs": "1.0.4",
     "autoprefixer": "10.4.14",
-    "eslint": "8.46.0",
-    "eslint-config-next": "13.4.12",
-    "framer-motion": "^10.15.0",
-    "lucide-react": "^0.263.1",
+    "framer-motion": "10.15.0",
+    "lucide-react": "0.263.1",
     "next": "13.4.12",
     "postcss": "8.4.27",
     "react": "18.2.0",
@@ -27,7 +23,15 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "prettier": "^3.0.1",
-    "prettier-plugin-tailwindcss": "^0.4.1"
+    "@types/node": "20.4.6",
+    "@types/react": "18.2.18",
+    "@types/react-dom": "18.2.7",
+    "@typescript-eslint/eslint-plugin": "6.4.0",
+    "@typescript-eslint/parser": "6.4.0",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.12",
+    "eslint-plugin-react": "7.33.1",
+    "prettier": "3.0.2",
+    "prettier-plugin-tailwindcss": "0.5.3"
   }
 }
